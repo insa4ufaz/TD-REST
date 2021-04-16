@@ -34,6 +34,44 @@ class Vehicle {
 		this.id = id;
 	}
 
+  public String getvehicle() {
+    return this.vehicle;
+  }
+
+  public void setvehicle(String vehicle) {
+    this.vehicle = vehicle;
+  }
+
+  public String getModelYear(){
+    return this.modelYear;
+  }
+  public void setModelYear(String modelYear){
+    this.modelYear = modelYear;
+  }
+
+  public String getVehicleType(){
+    return this.vehicleType;
+  }
+
+  public void setVehicleType(String vehicleType){
+    this.vehicleType = vehicleType;
+  }
+  
+  public String getGearbox(){
+    return this.gearbox;
+  }
+  
+  public void setGearbox(String gearbox){
+    this.gearbox = gearbox;
+  }
+  
+  public String getFuelType(){
+    return this.fuelType;
+  }
+  
+  public void setFuelType(String fuelType){
+    this.fuelType = fuelType;
+  }
 	// TO BE COMPLETED
 
 	@Override

@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 class VehicleNotFoundAdvice {
 
 	// TO BE COMPLETED
-	
-	String employeeNotFoundHandler(VehicleNotFoundException ex) {
+  @ResponseBody
+	@ExceptionHandler(VehicleNotFoundException.class)
+  @ResponseStatus(HttpStatus.NOT_FOUND)
+	String vehicleNotFoundHandler(VehicleNotFoundException ex) {
 		return ex.getMessage();
 	}
 }
